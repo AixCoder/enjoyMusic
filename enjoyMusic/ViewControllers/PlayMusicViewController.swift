@@ -52,7 +52,7 @@ class PlayMusicViewController: EMBaseViewController {
     }
     */
     
-    //MARK:- prive
+    //MARK: prive
     private func layoutViews(){
         
         panelView.translatesAutoresizingMaskIntoConstraints = false
@@ -91,10 +91,10 @@ class PlayMusicViewController: EMBaseViewController {
                                                   attribute: .centerY, relatedBy: .equal, toItem: panelView, attribute: .centerY, multiplier: 1, constant: 0)
         self.panelView.addConstraint(playButtonYPoint)
         
-
+        
     }
     
-    //MARK:- getter
+    //MARK: getter
     //下一首按钮
     private lazy var nextButton: UIButton = {
         
