@@ -1,0 +1,268 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>276FE330-C29D-48A9-8457-E8C704FB3641</UUID>
+        <nextObjectID>121</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>641</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>LMCookieJar</key>
+                        <data>
+		Fttmf2L4PrGvKUF496+nqgVVGek45TjOe7sUMtjNg8I=
+		</data>
+                        <key>LMEnvironment</key>
+                        <data>
+		uzBoVFcO4YvR9/3ej4AJ1UOOsA/u5DKY2aemusoIseU=
+		</data>
+                        <key>LMEnvironmentDomain</key>
+                        <data>
+		yM1GPGHdquS8IWLtuczlNoqKhIhD9FW6IReSfFffJgs=
+		</data>
+                        <key>LMEnvironmentVariable</key>
+                        <data>
+		P8e0lYd5JZKRabS/eXVSOJ4oitilz67xtv+pLqW1Jqg=
+		</data>
+                        <key>LMEnvironmentVariableValue</key>
+                        <data>
+		my5hNPJ51oDCSa8EgdNxWAnRcDLcERUGjtuXnzhSxQ0=
+		</data>
+                        <key>LMKeyValue</key>
+                        <data>
+		bIXXbyYF2xAv2MXg8JTVFsslmMKuvsfnR86QdUcFkdM=
+		</data>
+                        <key>LMRequest</key>
+                        <data>
+		vcehD1+Y0zJEqCmgqlTWLscXXTAat5YQbsUJSVqwTq0=
+		</data>
+                        <key>LMRequestGroup</key>
+                        <data>
+		MnZKiG/nHZ2bvbULv2vfzH+0tXd5w+NuuMPlNJjBAMw=
+		</data>
+                        <key>LMRequestTreeItem</key>
+                        <data>
+		Ae5GlAcsXxZOGKCPQgemYbXQ3+KUtHlsprrqBD+V81o=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array>
+                        <string>LMDocumentVersion4</string>
+                    </array>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+    <object type="LMKEYVALUE" id="z102">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">0</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z118"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z103">
+        <attribute name="value" type="string">api-client/0.1.3 com.douban.DoubanRadio/4.9.3 iOS/10.3.2 iPhone7,1</attribute>
+        <attribute name="order" type="int64">2</attribute>
+        <attribute name="name" type="string">User-Agent</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z105"></relationship>
+    </object>
+    <object type="LMENVIRONMENTVARIABLEVALUE" id="z104">
+        <attribute name="value" type="string"></attribute>
+        <relationship name="environment" type="1/1" destination="LMENVIRONMENT" idrefs="z119"></relationship>
+        <relationship name="variable" type="1/1" destination="LMENVIRONMENTVARIABLE" idrefs="z117"></relationship>
+    </object>
+    <object type="LMREQUEST" id="z105">
+        <attribute name="uuid" type="string">4724520A-5753-4CD6-B29B-7FE5EC183F61</attribute>
+        <attribute name="url" type="string">https://www.douban.com/service/auth2/token</attribute>
+        <attribute name="storecookies" type="bool">1</attribute>
+        <attribute name="sendcookies" type="bool">1</attribute>
+        <attribute name="redirectmethod" type="bool">0</attribute>
+        <attribute name="redirectauthorization" type="bool">0</attribute>
+        <attribute name="method" type="string">POST</attribute>
+        <attribute name="followredirects" type="bool">0</attribute>
+        <attribute name="clientcertificate" type="string">[{"data":{"mode":0},"identifier":"com.luckymarmot.CertificateDynamicValue"}]</attribute>
+        <attribute name="body" type="string">[{"data":{"keyValues":[[["alt"],["json"],true],[["apikey"],["02646d3fb69a52ff072d47bf23cef8fd"],true],[["audio_patch_version"],["4"],true],[["client_id"],["02646d3fb69a52ff072d47bf23cef8fd"],true],[["client_secret"],["cde5d61429abcd7c"],true],[["device_id"],["ebf66f7519ad364db30c9eac3a575f357b9fd752"],true],[["douban_udid"],["c5c76f3312085a64d8a1220fd2080e9ec611835a"],true],[["grant_type"],["password"],true],[["password"],["liuhongnian16"],true],[["redirect_uri"],["http:\\/\\/www.douban.com\\/mobile\\/fm"],true],[["udid"],["ebf66f7519ad364db30c9eac3a575f357b9fd752"],true],[["user_accept_play_third_party"],["0"],true],[["username"],["liuhongnian16@gmail.com"],true]]},"identifier":"com.luckymarmot.BodyFormKeyValueDynamicValue"}]</attribute>
+        <attribute name="order" type="int64">0</attribute>
+        <attribute name="name" type="string">登录API</attribute>
+        <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z114 z103 z106 z116"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z106">
+        <attribute name="value" type="string">*/*</attribute>
+        <attribute name="order" type="int64">7</attribute>
+        <attribute name="name" type="string">Accept</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z105"></relationship>
+    </object>
+    <object type="LMREQUEST" id="z107">
+        <attribute name="uuid" type="string">00DB0983-49B9-4573-8297-39D19C74C56F</attribute>
+        <attribute name="url" type="string">https://api.douban.com/v2/fm/app_channels?alt=json\u2600apikey=02646d3fb69a52ff072d47bf23cef8fd\u2600app_name=radio_iphone\u2600audio_patch_version=4\u2600client=s%3Amobile%7Cy%3AiOS%2010.3.2%7Cf%3A120%7Cd%3Aebf66f7519ad364db30c9eac3a575f357b9fd752%7Ce%3AiPhone7%2C1%7Cm%3Aappstore\u2600douban_udid=c5c76f3312085a64d8a1220fd2080e9ec611835a\u2600icon_cate=xlarge\u2600udid=ebf66f7519ad364db30c9eac3a575f357b9fd752\u2600user_accept_play_third_party=0\u2600version=120</attribute>
+        <attribute name="storecookies" type="bool">1</attribute>
+        <attribute name="sendcookies" type="bool">1</attribute>
+        <attribute name="redirectmethod" type="bool">0</attribute>
+        <attribute name="redirectauthorization" type="bool">0</attribute>
+        <attribute name="method" type="string">GET</attribute>
+        <attribute name="followredirects" type="bool">0</attribute>
+        <attribute name="order" type="int64">1</attribute>
+        <attribute name="name" type="string">频道列表</attribute>
+        <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z110 z111 z115"></relationship>
+    </object>
+    <object type="LMCOOKIEJAR" id="z108">
+        <attribute name="uuid" type="string">6CD7BC17-9679-447A-9D71-8837A45C2A83</attribute>
+        <attribute name="order" type="int64">1</attribute>
+        <attribute name="name" type="string">Default Jar</attribute>
+    </object>
+    <object type="LMKEYVALUE" id="z109">
+        <attribute name="value" type="string">Bearer 70016f1e462d444650044d5ad287ccd2</attribute>
+        <attribute name="order" type="int64">1</attribute>
+        <attribute name="name" type="string">Authorization</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z121"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z110">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">2</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z107"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z111">
+        <attribute name="value" type="string">api-client/0.1.3 com.douban.DoubanRadio/4.9.3 iOS/10.3.2 iPhone7,1</attribute>
+        <attribute name="order" type="int64">0</attribute>
+        <attribute name="name" type="string">User-Agent</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z107"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z112">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">2</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z121"></relationship>
+    </object>
+    <object type="LMENVIRONMENTDOMAIN" id="z113">
+        <attribute name="uuid" type="string">1C09B2DB-3B7F-4B13-BB68-67D43FF0C700</attribute>
+        <attribute name="order" type="int64">0</attribute>
+        <attribute name="name" type="string">Default Domain</attribute>
+        <relationship name="environments" type="0/0" destination="LMENVIRONMENT" idrefs="z119"></relationship>
+        <relationship name="variables" type="0/0" destination="LMENVIRONMENTVARIABLE" idrefs="z117"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z114">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">10</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z105"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z115">
+        <attribute name="value" type="string">Bearer 70016f1e462d444650044d5ad287ccd2</attribute>
+        <attribute name="order" type="int64">1</attribute>
+        <attribute name="name" type="string">Authorization</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z107"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z116">
+        <attribute name="value" type="string">keep-alive</attribute>
+        <attribute name="order" type="int64">8</attribute>
+        <attribute name="name" type="string">Connection</attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z105"></relationship>
+    </object>
+    <object type="LMENVIRONMENTVARIABLE" id="z117">
+        <attribute name="uuid" type="string">76CE0F55-8458-4E9E-8560-5E677AE056FE</attribute>
+        <attribute name="order" type="int64">0</attribute>
+        <attribute name="name" type="string"></attribute>
+        <relationship name="domain" type="0/1" destination="LMENVIRONMENTDOMAIN" idrefs="z113"></relationship>
+        <relationship name="values" type="0/0" destination="LMENVIRONMENTVARIABLEVALUE" idrefs="z104"></relationship>
+    </object>
+    <object type="LMREQUEST" id="z118">
+        <attribute name="uuid" type="string">5DAA8F31-666B-4D88-98A7-8C53D59456B0</attribute>
+        <attribute name="url" type="string">https://api.douban.com/v2/fm/songlist/11055611/detail</attribute>
+        <attribute name="storecookies" type="bool">1</attribute>
+        <attribute name="sendcookies" type="bool">1</attribute>
+        <attribute name="redirectmethod" type="bool">0</attribute>
+        <attribute name="redirectauthorization" type="bool">0</attribute>
+        <attribute name="method" type="string">POST</attribute>
+        <attribute name="followredirects" type="bool">0</attribute>
+        <attribute name="body" type="string">[{"data":{"keyValues":[[["alt"],["json"],true],[["apikey"],["02646d3fb69a52ff072d47bf23cef8fd"],true],[["app_name"],["radio_iphone"],true],[["audio_patch_version"],["4"],true],[["client"],["s:mobile|y:iOS 10.3.2|f:120|d:ebf66f7519ad364db30c9eac3a575f357b9fd752|e:iPhone7,1|m:appstore"],true],[["douban_udid"],["c5c76f3312085a64d8a1220fd2080e9ec611835a"],true],[["kbps"],["128"],true],[["udid"],["ebf66f7519ad364db30c9eac3a575f357b9fd752"],true],[["user_accept_play_third_party"],["0"],true],[["version"],["120"],true]]},"identifier":"com.luckymarmot.BodyMultipartFormDataDynamicValue"}]</attribute>
+        <attribute name="order" type="int64">3</attribute>
+        <attribute name="name" type="string">节目单歌曲列表</attribute>
+        <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z102"></relationship>
+    </object>
+    <object type="LMENVIRONMENT" id="z119">
+        <attribute name="uuid" type="string">ED33EB4D-AA67-4721-8A42-77B39EACB8B5</attribute>
+        <attribute name="order" type="int64">0</attribute>
+        <attribute name="name" type="string">Default Environment</attribute>
+        <relationship name="domain" type="0/1" destination="LMENVIRONMENTDOMAIN" idrefs="z113"></relationship>
+        <relationship name="variablesvalues" type="0/0" destination="LMENVIRONMENTVARIABLEVALUE" idrefs="z104"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z120">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">0</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z121"></relationship>
+    </object>
+    <object type="LMREQUEST" id="z121">
+        <attribute name="uuid" type="string">C289BB4F-C485-4D37-8A6B-1591CE750976</attribute>
+        <attribute name="url" type="string">https://api.douban.com/v2/fm/programme/creation?alt=json\u2600apikey=02646d3fb69a52ff072d47bf23cef8fd\u2600app_name=radio_iphone\u2600audio_patch_version=4\u2600client=s%3Amobile%7Cy%3AiOS%2010.3.2%7Cf%3A120%7Cd%3Aebf66f7519ad364db30c9eac3a575f357b9fd752%7Ce%3AiPhone7%2C1%7Cm%3Aappstore\u2600douban_udid=c5c76f3312085a64d8a1220fd2080e9ec611835a\u2600limit=20\u2600start=0\u2600udid=ebf66f7519ad364db30c9eac3a575f357b9fd752\u2600user_accept_play_third_party=0\u2600version=120</attribute>
+        <attribute name="storecookies" type="bool">1</attribute>
+        <attribute name="sendcookies" type="bool">1</attribute>
+        <attribute name="redirectmethod" type="bool">0</attribute>
+        <attribute name="redirectauthorization" type="bool">0</attribute>
+        <attribute name="method" type="string">GET</attribute>
+        <attribute name="followredirects" type="bool">0</attribute>
+        <attribute name="body" type="string">[{"data":{"keyValues":[[["alt"],["json"],true],[["apikey"],["02646d3fb69a52ff072d47bf23cef8fd"],true],[["app_name"],["radio_iphone"],true],[["audio_patch_version"],["4"],true],[["client"],["s:mobile|y:iOS 10.3.2|f:120|d:ebf66f7519ad364db30c9eac3a575f357b9fd752|e:iPhone7,1|m:appstore"],true],[["douban_udid"],["c5c76f3312085a64d8a1220fd2080e9ec611835a"],true],[["limit"],["20"],true],[["start"],["0"],true],[["udid"],["ebf66f7519ad364db30c9eac3a575f357b9fd752"],true],[["user_accept_play_third_party"],["1"],true],[["version"],["120"],true]]},"identifier":"com.luckymarmot.BodyFormKeyValueDynamicValue"}]</attribute>
+        <attribute name="order" type="int64">2</attribute>
+        <attribute name="name" type="string">节目单列表</attribute>
+        <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z109 z120 z112"></relationship>
+    </object>
+</database>
