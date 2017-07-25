@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Bridge-Player-Next.png",
+      "filename" : "play.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Bridge-Player-Next@2x.png",
+      "filename" : "play@2x.png",
       "scale" : "2x"
     },
     {

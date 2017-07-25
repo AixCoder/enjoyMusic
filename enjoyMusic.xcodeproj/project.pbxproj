@@ -10,7 +10,6 @@
 		F60FD5E51F259A6600810C0E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FD5E41F259A6600810C0E /* HomeViewController.swift */; };
 		F60FD5E71F259A9500810C0E /* EMBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FD5E61F259A9500810C0E /* EMBaseViewController.swift */; };
 		F60FD5E91F25A8E500810C0E /* PlayMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FD5E81F25A8E500810C0E /* PlayMusicViewController.swift */; };
-		F60FD5EF1F25E83500810C0E /* TransparentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FD5EE1F25E83500810C0E /* TransparentView.swift */; };
 		F621B8FE1F208E5D003F9701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621B8FD1F208E5D003F9701 /* AppDelegate.swift */; };
 		F621B9001F208E5D003F9701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621B8FF1F208E5D003F9701 /* ViewController.swift */; };
 		F621B9031F208E5D003F9701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F621B9011F208E5D003F9701 /* Main.storyboard */; };
@@ -47,7 +46,6 @@
 		F60FD5E41F259A6600810C0E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F60FD5E61F259A9500810C0E /* EMBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMBaseViewController.swift; sourceTree = "<group>"; };
 		F60FD5E81F25A8E500810C0E /* PlayMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicViewController.swift; sourceTree = "<group>"; };
-		F60FD5EE1F25E83500810C0E /* TransparentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentView.swift; sourceTree = "<group>"; };
 		F621B8FA1F208E5D003F9701 /* enjoyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enjoyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F621B8FD1F208E5D003F9701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F621B8FF1F208E5D003F9701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 		F621B9171F20A27E003F9701 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F60FD5EE1F25E83500810C0E /* TransparentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -383,7 +380,6 @@
 				F621B92F1F20A2C0003F9701 /* YTKBatchRequestAgent.m in Sources */,
 				F621B95F1F20A2DB003F9701 /* AFAutoPurgingImageCache.m in Sources */,
 				F621B9661F20A2DB003F9701 /* UIRefreshControl+AFNetworking.m in Sources */,
-				F60FD5EF1F25E83500810C0E /* TransparentView.swift in Sources */,
 				F621B9481F20A2D6003F9701 /* AFURLResponseSerialization.m in Sources */,
 				F621B9341F20A2C0003F9701 /* YTKNetworkPrivate.m in Sources */,
 			);

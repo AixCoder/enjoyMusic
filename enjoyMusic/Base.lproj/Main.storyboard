@@ -69,13 +69,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nnY-dp-DsD" customClass="TransparentView" customModule="enjoyMusic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnY-dp-DsD">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Mg2-kE-Dom"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nnY-dp-DsD" firstAttribute="leading" secondItem="sOo-2m-dkz" secondAttribute="leading" id="8BR-M7-1xa"/>
+                            <constraint firstAttribute="trailing" secondItem="nnY-dp-DsD" secondAttribute="trailing" id="oGs-mN-Can"/>
+                            <constraint firstItem="HBR-CI-hgk" firstAttribute="top" secondItem="nnY-dp-DsD" secondAttribute="bottom" id="tah-b3-DPM"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="panelView" destination="nnY-dp-DsD" id="MiN-nt-gaw"/>
