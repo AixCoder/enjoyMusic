@@ -40,6 +40,11 @@
 		F621B9661F20A2DB003F9701 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F621B95C1F20A2DB003F9701 /* UIRefreshControl+AFNetworking.m */; };
 		F621B9671F20A2DB003F9701 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F621B95E1F20A2DB003F9701 /* UIWebView+AFNetworking.m */; };
 		F621B9691F20A383003F9701 /* DoubanToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621B9681F20A383003F9701 /* DoubanToken.swift */; };
+		F66E334D1F287382004DD41B /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E334C1F287382004DD41B /* PlayViewModel.swift */; };
+		F66E334F1F28747D004DD41B /* EMMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E334E1F28747D004DD41B /* EMMedia.swift */; };
+		F66E33511F287971004DD41B /* PlayViewDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E33501F287971004DD41B /* PlayViewDataRepository.swift */; };
+		F66E33531F287A1D004DD41B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E33521F287A1D004DD41B /* HomeViewModel.swift */; };
+		F66E33551F287A64004DD41B /* HomeViewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E33541F287A64004DD41B /* HomeViewRepository.swift */; };
 		F6C67A7F1F278CBE0004C8D5 /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C67A591F278CBE0004C8D5 /* DOUAudioAnalyzer.m */; };
 		F6C67A801F278CBE0004C8D5 /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C67A5B1F278CBE0004C8D5 /* DOUAudioAnalyzer+Default.m */; };
 		F6C67A811F278CBE0004C8D5 /* DOUAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C67A5E1F278CBE0004C8D5 /* DOUAudioDecoder.m */; };
@@ -125,6 +130,12 @@
 		F621B95D1F20A2DB003F9701 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		F621B95E1F20A2DB003F9701 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		F621B9681F20A383003F9701 /* DoubanToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubanToken.swift; sourceTree = "<group>"; };
+		F66E334C1F287382004DD41B /* PlayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		F66E334E1F28747D004DD41B /* EMMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMMedia.swift; sourceTree = "<group>"; };
+		F66E33501F287971004DD41B /* PlayViewDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewDataRepository.swift; sourceTree = "<group>"; };
+		F66E33521F287A1D004DD41B /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F66E33541F287A64004DD41B /* HomeViewRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewRepository.swift; sourceTree = "<group>"; };
+		F66E33561F288E79004DD41B /* ViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelProtocol.h; sourceTree = "<group>"; };
 		F6C67A571F278CBE0004C8D5 /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
 		F6C67A581F278CBE0004C8D5 /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
 		F6C67A591F278CBE0004C8D5 /* DOUAudioAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioAnalyzer.m; sourceTree = "<group>"; };
@@ -226,6 +237,10 @@
 		F621B9141F20A27E003F9701 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F66E334E1F28747D004DD41B /* EMMedia.swift */,
+				F66E33501F287971004DD41B /* PlayViewDataRepository.swift */,
+				F66E33541F287A64004DD41B /* HomeViewRepository.swift */,
+				F66E33561F288E79004DD41B /* ViewModelProtocol.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +258,8 @@
 		F621B9161F20A27E003F9701 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F66E334C1F287382004DD41B /* PlayViewModel.swift */,
+				F66E33521F287A1D004DD41B /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -470,6 +487,7 @@
 				F621B9491F20A2D6003F9701 /* AFURLSessionManager.m in Sources */,
 				F6C67A871F278CBE0004C8D5 /* DOUAudioPlaybackItem.m in Sources */,
 				F6C67A841F278CBE0004C8D5 /* DOUAudioFileProvider.m in Sources */,
+				F66E33511F287971004DD41B /* PlayViewDataRepository.swift in Sources */,
 				F621B9461F20A2D6003F9701 /* AFSecurityPolicy.m in Sources */,
 				F621B9001F208E5D003F9701 /* ViewController.swift in Sources */,
 				F6C67A901F278CBE0004C8D5 /* NSData+DOUMappedFile.m in Sources */,
@@ -501,15 +519,19 @@
 				F6C67A851F278CBE0004C8D5 /* DOUAudioFrequencyAnalyzer.m in Sources */,
 				F6C67A881F278CBE0004C8D5 /* DOUAudioRenderer.m in Sources */,
 				F621B9331F20A2C0003F9701 /* YTKNetworkConfig.m in Sources */,
+				F66E334D1F287382004DD41B /* PlayViewModel.swift in Sources */,
 				F621B9631F20A2DB003F9701 /* UIButton+AFNetworking.m in Sources */,
 				F621B9471F20A2D6003F9701 /* AFURLRequestSerialization.m in Sources */,
+				F66E334F1F28747D004DD41B /* EMMedia.swift in Sources */,
 				F6C67A891F278CBE0004C8D5 /* DOUAudioSpatialAnalyzer.m in Sources */,
 				F621B92F1F20A2C0003F9701 /* YTKBatchRequestAgent.m in Sources */,
 				F621B95F1F20A2DB003F9701 /* AFAutoPurgingImageCache.m in Sources */,
+				F66E33551F287A64004DD41B /* HomeViewRepository.swift in Sources */,
 				F6C67A811F278CBE0004C8D5 /* DOUAudioDecoder.m in Sources */,
 				F6C67A8F1F278CBE0004C8D5 /* DOUSimpleHTTPRequest.m in Sources */,
 				F621B9661F20A2DB003F9701 /* UIRefreshControl+AFNetworking.m in Sources */,
 				F621B9481F20A2D6003F9701 /* AFURLResponseSerialization.m in Sources */,
+				F66E33531F287A1D004DD41B /* HomeViewModel.swift in Sources */,
 				F621B9341F20A2C0003F9701 /* YTKNetworkPrivate.m in Sources */,
 				F6C67A8B1F278CBE0004C8D5 /* DOUAudioStreamer+Options.m in Sources */,
 				F6C67A8D1F278CBE0004C8D5 /* DOUEAGLView.m in Sources */,

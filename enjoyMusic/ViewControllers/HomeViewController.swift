@@ -12,12 +12,16 @@ class HomeViewController: EMBaseViewController {
 
     @IBOutlet weak var bgImageView: UIImageView!
     
+    var homeViewModel:HomeViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let image = UIImage.init(named: "iPhone6_bg")
         bgImageView.image = image
+        
+        homeViewModel = HomeViewModel()
         
         self.addPlayViewController()
     }
@@ -36,6 +40,10 @@ class HomeViewController: EMBaseViewController {
         self.addChildViewController(playViewController)
     }
     
+    private func tryRequestDoubanToken(){
+        
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -46,5 +54,7 @@ class HomeViewController: EMBaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }
