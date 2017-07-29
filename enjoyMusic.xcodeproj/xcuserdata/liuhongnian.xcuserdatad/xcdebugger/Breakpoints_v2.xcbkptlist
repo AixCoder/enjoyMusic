@@ -10,11 +10,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enjoyMusic/Models/HomeViewRepository.swift"
-            timestampString = "522749643.855052"
+            timestampString = "522835976.546698"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "HomeViewRepository"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "enjoyMusic/Models/HomeViewRepository.swift"
+            timestampString = "522835976.546698"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "doubanToken(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -25,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "enjoyMusic/Models/HomeViewRepository.swift"
-            timestampString = "522749646.073884"
+            filePath = "enjoyMusic/ViewModels/HomeViewModel.swift"
+            timestampString = "522844756.023764"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "doubanToken(completionHandler:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "loadToken()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

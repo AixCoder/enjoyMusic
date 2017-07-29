@@ -8,16 +8,7 @@
 
 import UIKit
 
-//func _AddHandlerHelper(step: Int) -> () -> Int {
-//    let num = Num()
-//    
-//    let obj = _AddHelper()
-//    obj.num = num
-//    obj.step = step
-//    return obj.add
-//}
-
-typealias completionHandler = (_ tokenValue: String,_ error: NSError) ->()
+typealias completionHandler = (_ tokenValue: String,_ error: NSError?) ->()
 
 class HomeViewRepository: NSObject {
 
@@ -27,11 +18,19 @@ class HomeViewRepository: NSObject {
         
     }
     
-    func doubanToken(completionHandler: completionHandler) {
+    func doubanToken(completionHandler:  @escaping completionHandler) {
         
         let request = DoubanToken.init()
         request.startWithCompletionBlock(success: { (baseRequest: YTKBaseRequest) in
             
+            let json = JSON(baseRequest.responseData!)
+            
+            let token: String = json["access_token"].string!
+            
+            //save token
+            UserDefaults.standard.set(token, forKey: "douban_token")
+            
+            completionHandler(token,Optional.none)
             
         }) { (baseRequest: YTKBaseRequest) in
             
