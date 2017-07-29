@@ -8,7 +8,11 @@
 
 import UIKit
 
-class HomeViewModel: NSObject {
+class HomeViewModel:  NSObject {
+
+    dynamic private(set) var result: String?
+    private(set) var executing: Bool
+    private(set) var error: NSError?
     
     var repository: HomeViewRepository
 
@@ -16,9 +20,13 @@ class HomeViewModel: NSObject {
         
         repository = HomeViewRepository.init()
 
+        executing = false
+        
+        self.result = ""
         
         super.init()
         
+        self.loadToken()
     }
     
     
@@ -26,6 +34,7 @@ class HomeViewModel: NSObject {
         
         repository.doubanToken { (token, error) in
             
+            self.result = token
         }
     }
 }

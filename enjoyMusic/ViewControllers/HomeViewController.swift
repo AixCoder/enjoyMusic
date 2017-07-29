@@ -8,6 +8,8 @@
 
 import UIKit
 
+private var mycontext = 0
+
 class HomeViewController: EMBaseViewController {
 
     @IBOutlet weak var bgImageView: UIImageView!
@@ -23,12 +25,17 @@ class HomeViewController: EMBaseViewController {
         
         homeViewModel = HomeViewModel()
         
-        self.addPlayViewController()
+        self.observableViewModel()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    deinit {
+        
+        homeViewModel.removeObserver(self, forKeyPath: "result")
     }
     
     private func addPlayViewController() {
@@ -55,6 +62,22 @@ class HomeViewController: EMBaseViewController {
     }
     */
     
+    func observableViewModel() {
+        
+        homeViewModel.addObserver(self, forKeyPath: "result", options: .new, context: &mycontext)
+    }
     
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        if context == &mycontext {
+            
+            if (change?[NSKeyValueChangeKey.newKey]) != nil {
+                self.addPlayViewController()
+            }else{
+                
+                print("获取token失败")
+            }
+        }
+    }
 
 }

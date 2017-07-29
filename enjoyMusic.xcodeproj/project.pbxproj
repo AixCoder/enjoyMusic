@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F601486E1F28A8A30048743F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601486D1F28A8A30048743F /* SwiftyJSON.swift */; };
 		F60FD5E51F259A6600810C0E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FD5E41F259A6600810C0E /* HomeViewController.swift */; };
 		F60FD5E71F259A9500810C0E /* EMBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FD5E61F259A9500810C0E /* EMBaseViewController.swift */; };
 		F60FD5E91F25A8E500810C0E /* PlayMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FD5E81F25A8E500810C0E /* PlayMusicViewController.swift */; };
 		F621B8FE1F208E5D003F9701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621B8FD1F208E5D003F9701 /* AppDelegate.swift */; };
-		F621B9001F208E5D003F9701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621B8FF1F208E5D003F9701 /* ViewController.swift */; };
 		F621B9031F208E5D003F9701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F621B9011F208E5D003F9701 /* Main.storyboard */; };
 		F621B9051F208E5D003F9701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F621B9041F208E5D003F9701 /* Assets.xcassets */; };
 		F621B9081F208E5D003F9701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F621B9061F208E5D003F9701 /* LaunchScreen.storyboard */; };
@@ -66,12 +66,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F601486C1F28A8A30048743F /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		F601486D1F28A8A30048743F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		F60FD5E41F259A6600810C0E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F60FD5E61F259A9500810C0E /* EMBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMBaseViewController.swift; sourceTree = "<group>"; };
 		F60FD5E81F25A8E500810C0E /* PlayMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicViewController.swift; sourceTree = "<group>"; };
 		F621B8FA1F208E5D003F9701 /* enjoyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enjoyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F621B8FD1F208E5D003F9701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F621B8FF1F208E5D003F9701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F621B9021F208E5D003F9701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F621B9041F208E5D003F9701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F621B9071F208E5D003F9701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -135,7 +136,6 @@
 		F66E33501F287971004DD41B /* PlayViewDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewDataRepository.swift; sourceTree = "<group>"; };
 		F66E33521F287A1D004DD41B /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F66E33541F287A64004DD41B /* HomeViewRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewRepository.swift; sourceTree = "<group>"; };
-		F66E33561F288E79004DD41B /* ViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelProtocol.h; sourceTree = "<group>"; };
 		F6C67A571F278CBE0004C8D5 /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
 		F6C67A581F278CBE0004C8D5 /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
 		F6C67A591F278CBE0004C8D5 /* DOUAudioAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioAnalyzer.m; sourceTree = "<group>"; };
@@ -189,6 +189,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F601486B1F28A89A0048743F /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				F601486C1F28A8A30048743F /* SwiftyJSON.h */,
+				F601486D1F28A8A30048743F /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
 		F621B8F11F208E5D003F9701 = {
 			isa = PBXGroup;
 			children = (
@@ -210,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				F621B8FD1F208E5D003F9701 /* AppDelegate.swift */,
-				F621B8FF1F208E5D003F9701 /* ViewController.swift */,
 				F621B9181F20A2B5003F9701 /* ThirdParty */,
 				F621B9131F20A27E003F9701 /* API */,
 				F621B9141F20A27E003F9701 /* Models */,
@@ -240,7 +248,6 @@
 				F66E334E1F28747D004DD41B /* EMMedia.swift */,
 				F66E33501F287971004DD41B /* PlayViewDataRepository.swift */,
 				F66E33541F287A64004DD41B /* HomeViewRepository.swift */,
-				F66E33561F288E79004DD41B /* ViewModelProtocol.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 		F621B9181F20A2B5003F9701 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				F601486B1F28A89A0048743F /* SwiftyJSON */,
 				F6C67A031F2789D00004C8D5 /* DOUAudioPlayer */,
 				F621B94A1F20A2DB003F9701 /* UIKit+AFNetworking */,
 				F621B9361F20A2D6003F9701 /* AFNetworking */,
@@ -489,7 +497,6 @@
 				F6C67A841F278CBE0004C8D5 /* DOUAudioFileProvider.m in Sources */,
 				F66E33511F287971004DD41B /* PlayViewDataRepository.swift in Sources */,
 				F621B9461F20A2D6003F9701 /* AFSecurityPolicy.m in Sources */,
-				F621B9001F208E5D003F9701 /* ViewController.swift in Sources */,
 				F6C67A901F278CBE0004C8D5 /* NSData+DOUMappedFile.m in Sources */,
 				F6C67A861F278CBE0004C8D5 /* DOUAudioLPCM.m in Sources */,
 				F60FD5E91F25A8E500810C0E /* PlayMusicViewController.swift in Sources */,
@@ -498,6 +505,7 @@
 				F621B9611F20A2DB003F9701 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				F6C67A7F1F278CBE0004C8D5 /* DOUAudioAnalyzer.m in Sources */,
 				F621B9691F20A383003F9701 /* DoubanToken.swift in Sources */,
+				F601486E1F28A8A30048743F /* SwiftyJSON.swift in Sources */,
 				F6C67A831F278CBE0004C8D5 /* DOUAudioFilePreprocessor.m in Sources */,
 				F6C67A8E1F278CBE0004C8D5 /* DOUMPMediaLibraryAssetLoader.m in Sources */,
 				F6C67A821F278CBE0004C8D5 /* DOUAudioEventLoop.m in Sources */,
