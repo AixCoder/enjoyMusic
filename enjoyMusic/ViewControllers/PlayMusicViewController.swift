@@ -12,6 +12,7 @@ class PlayMusicViewController: EMBaseViewController {
     
     @IBOutlet weak var panelView: UIView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,6 +52,18 @@ class PlayMusicViewController: EMBaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: IB Action
+    @objc private func playButtonPressed() {
+        
+        
+    }
+    
+    @objc private func playNextButtonPressed() {
+        
+        
+        
+    }
     
     //MARK: prive
     private func layoutViews(){
@@ -103,7 +116,8 @@ class PlayMusicViewController: EMBaseViewController {
         btn.setImage(UIImage.init(named: "player_next"), for: .normal)
         btn.sizeToFit()
         
-        print("初始化button")
+        btn.addTarget(self, action: #selector(playNextButtonPressed), for: .touchUpInside)
+        
         return btn
         
     }()
@@ -113,6 +127,9 @@ class PlayMusicViewController: EMBaseViewController {
         let button: UIButton = UIButton.init(type: .custom)
         button.setImage(UIImage.init(named: "play"), for: .normal)
         button.sizeToFit()
+        
+        button.addTarget(self, action: #selector(playButtonPressed), for: .touchUpInside)
+        
         return button
     }()
 

@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewModel:  NSObject {
 
-    dynamic private(set) var result: String?
+    dynamic private(set) var result: String? = nil
     private(set) var executing: Bool
     private(set) var error: NSError?
     
@@ -26,7 +26,6 @@ class HomeViewModel:  NSObject {
         
         super.init()
         
-        self.loadToken()
     }
     
     

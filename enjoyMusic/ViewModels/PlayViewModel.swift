@@ -8,22 +8,18 @@
 
 import UIKit
 
+protocol UserAction{}
+
 class PlayViewModel: NSObject {
     
-    
-    func play() {
+    enum actionType: UserAction {
+        case play()
+        case pause()
+        case switchNextSong()
+    }
+
+    func trigger(_ action :UserAction){
+        
         
     }
-    private func pause() {
-        
-    }
-    private func stop() {
-        
-    }
-    
-    func playNext() {
-        
-    }
-    
-    
 }

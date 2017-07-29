@@ -20,11 +20,17 @@ class HomeViewRepository: NSObject {
     
     func doubanToken(completionHandler:  @escaping completionHandler) {
         
+        if UserDefaults.standard.object(forKey: "douban_token") != nil
+        {
+            let token:String = UserDefaults.standard.object(forKey: "douban_token") as! String
+            completionHandler(token ,Optional.none)
+        }
+        else
+        {
         let request = DoubanToken.init()
         request.startWithCompletionBlock(success: { (baseRequest: YTKBaseRequest) in
             
             let json = JSON(baseRequest.responseData!)
-            
             let token: String = json["access_token"].string!
             
             //save token
@@ -36,6 +42,8 @@ class HomeViewRepository: NSObject {
             
             
         }
+        
+    }
         
     }
     
