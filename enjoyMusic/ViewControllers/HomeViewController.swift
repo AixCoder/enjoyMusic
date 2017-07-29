@@ -24,8 +24,10 @@ class HomeViewController: EMBaseViewController {
         bgImageView.image = image
         
         homeViewModel = HomeViewModel()
-        
         self.observableViewModel()
+        homeViewModel.loadToken()
+
+        
     }
 
     override func didReceiveMemoryWarning() {

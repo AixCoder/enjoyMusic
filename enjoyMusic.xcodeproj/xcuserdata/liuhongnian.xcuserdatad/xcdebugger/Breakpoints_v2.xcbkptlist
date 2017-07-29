@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "enjoyMusic/Models/HomeViewRepository.swift"
-            timestampString = "522835976.546698"
+            filePath = "enjoyMusic/ViewModels/HomeViewModel.swift"
+            timestampString = "523010162.142644"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "HomeViewRepository"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "enjoyMusic/Models/HomeViewRepository.swift"
-            timestampString = "522835976.546698"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "doubanToken(completionHandler:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "loadToken()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "enjoyMusic/ViewModels/HomeViewModel.swift"
-            timestampString = "522844756.023764"
+            filePath = "enjoyMusic/ViewControllers/PlayMusicViewController.swift"
+            timestampString = "523008812.998684"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "loadToken()"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "playNextButtonPressed()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "enjoyMusic/ViewControllers/PlayMusicViewController.swift"
+            timestampString = "523010549.685097"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "playButtonPressed()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
