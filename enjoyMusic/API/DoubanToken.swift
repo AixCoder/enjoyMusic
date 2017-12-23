@@ -29,7 +29,7 @@ class DoubanToken: YTKRequest {
                    "device_id": "ebf66f7519ad364db30c9eac3a575f357b9fd752",
                    "douban_udid": "c5c76f3312085a64d8a1220fd2080e9ec611835a",
                    "grant_type": "password",
-                   "password": "liuhongnian16",
+                   "password": "liuhongnian1",
                    "redirect_uri": "http://www.douban.com/mobile/fm",
                    "udid": "ebf66f7519ad364db30c9eac3a575f357b9fd752",
                    "user_accept_play_third_party": "0",

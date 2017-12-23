@@ -45,6 +45,8 @@
 		F66E33511F287971004DD41B /* PlayViewDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E33501F287971004DD41B /* PlayViewDataRepository.swift */; };
 		F66E33531F287A1D004DD41B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E33521F287A1D004DD41B /* HomeViewModel.swift */; };
 		F66E33551F287A64004DD41B /* HomeViewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E33541F287A64004DD41B /* HomeViewRepository.swift */; };
+		F6BE75F21F2CADB70072B791 /* CreationListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE75F11F2CADB70072B791 /* CreationListRequest.swift */; };
+		F6BE75F41F2CB7E20072B791 /* SongListsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE75F31F2CB7E20072B791 /* SongListsRequest.swift */; };
 		F6C67A7F1F278CBE0004C8D5 /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C67A591F278CBE0004C8D5 /* DOUAudioAnalyzer.m */; };
 		F6C67A801F278CBE0004C8D5 /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C67A5B1F278CBE0004C8D5 /* DOUAudioAnalyzer+Default.m */; };
 		F6C67A811F278CBE0004C8D5 /* DOUAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C67A5E1F278CBE0004C8D5 /* DOUAudioDecoder.m */; };
@@ -136,6 +138,8 @@
 		F66E33501F287971004DD41B /* PlayViewDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewDataRepository.swift; sourceTree = "<group>"; };
 		F66E33521F287A1D004DD41B /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F66E33541F287A64004DD41B /* HomeViewRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewRepository.swift; sourceTree = "<group>"; };
+		F6BE75F11F2CADB70072B791 /* CreationListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationListRequest.swift; sourceTree = "<group>"; };
+		F6BE75F31F2CB7E20072B791 /* SongListsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListsRequest.swift; sourceTree = "<group>"; };
 		F6C67A571F278CBE0004C8D5 /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
 		F6C67A581F278CBE0004C8D5 /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
 		F6C67A591F278CBE0004C8D5 /* DOUAudioAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioAnalyzer.m; sourceTree = "<group>"; };
@@ -238,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				F621B9681F20A383003F9701 /* DoubanToken.swift */,
+				F6BE75F11F2CADB70072B791 /* CreationListRequest.swift */,
+				F6BE75F31F2CB7E20072B791 /* SongListsRequest.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -449,9 +455,14 @@
 				TargetAttributes = {
 					F621B8F91F208E5D003F9701 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6C2R3R9CB5;
+						DevelopmentTeam = 4T4F7QL3CW;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -513,6 +524,7 @@
 				F621B9351F20A2C0003F9701 /* YTKRequest.m in Sources */,
 				F621B9621F20A2DB003F9701 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				F621B9671F20A2DB003F9701 /* UIWebView+AFNetworking.m in Sources */,
+				F6BE75F21F2CADB70072B791 /* CreationListRequest.swift in Sources */,
 				F621B92D1F20A2C0003F9701 /* YTKBaseRequest.m in Sources */,
 				F621B9441F20A2D6003F9701 /* AFHTTPSessionManager.m in Sources */,
 				F621B8FE1F208E5D003F9701 /* AppDelegate.swift in Sources */,
@@ -541,6 +553,7 @@
 				F621B9481F20A2D6003F9701 /* AFURLResponseSerialization.m in Sources */,
 				F66E33531F287A1D004DD41B /* HomeViewModel.swift in Sources */,
 				F621B9341F20A2C0003F9701 /* YTKNetworkPrivate.m in Sources */,
+				F6BE75F41F2CB7E20072B791 /* SongListsRequest.swift in Sources */,
 				F6C67A8B1F278CBE0004C8D5 /* DOUAudioStreamer+Options.m in Sources */,
 				F6C67A8D1F278CBE0004C8D5 /* DOUEAGLView.m in Sources */,
 				F6C67A8C1F278CBE0004C8D5 /* DOUAudioVisualizer.m in Sources */,
@@ -665,14 +678,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 6C2R3R9CB5;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Anchnet Network Technology Co., Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Qitong Chen (MG9C23ABMU)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4T4F7QL3CW;
 				INFOPLIST_FILE = enjoyMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aixcoder.enjoyMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5e49ef55-2140-4a10-929a-0834af8f13a5";
-				PROVISIONING_PROFILE_SPECIFIER = "***";
+				PROVISIONING_PROFILE = "3cf5c2c0-5cf8-440f-a771-174a32a425b7";
+				PROVISIONING_PROFILE_SPECIFIER = enjoyMusic_development;
 				SWIFT_OBJC_BRIDGING_HEADER = "enjoyMusic/enjoyMusic-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -684,12 +700,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Anchnet Network Technology Co., Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4T4F7QL3CW;
 				INFOPLIST_FILE = enjoyMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aixcoder.enjoyMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "08ce0403-063a-450b-887c-5b726645de5a";
+				PROVISIONING_PROFILE_SPECIFIER = enjoyMusic_AdHoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "enjoyMusic/enjoyMusic-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

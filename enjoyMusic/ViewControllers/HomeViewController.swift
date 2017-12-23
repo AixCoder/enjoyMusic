@@ -11,6 +11,14 @@ import UIKit
 private var mycontext = 0
 
 class HomeViewController: EMBaseViewController {
+    
+    enum ScreenSize {
+        case iphone_35_inch
+        case iphone_4_inch
+        case iphone_47_inch
+        case iphone_55_inch
+        case iphone_58_inch
+    }
 
     @IBOutlet weak var bgImageView: UIImageView!
     
@@ -20,13 +28,27 @@ class HomeViewController: EMBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let image = UIImage.init(named: "iPhone6_bg")
-        bgImageView.image = image
+        var image = UIImage.init(named: "iPhone6_bg")
+        let size: ScreenSize = self.currentScreenSize()
+        switch size {
+        case .iphone_4_inch:
+            image = UIImage.init(named: "4-inch")
+        case .iphone_47_inch:
+            image = UIImage.init(named: "4.7-inch")
+        case .iphone_55_inch:
+            image = UIImage.init(named: "5.5-inch")
+        case .iphone_58_inch:
+            image = UIImage.init(named: "4.7-inch")
+        case.iphone_35_inch:
+            image = UIImage.init(named: "3.5-inch")
+        }
         
-        homeViewModel = HomeViewModel()
-        self.observableViewModel()
-        homeViewModel.loadToken()
+        bgImageView.image = image
 
+        self.addPlayViewController()
+//        homeViewModel = HomeViewModel()
+//        self.observableViewModel()
+//        homeViewModel.loadToken()
         
     }
 
@@ -79,6 +101,25 @@ class HomeViewController: EMBaseViewController {
                 
                 print("获取token失败")
             }
+        }
+    }
+
+    private func currentScreenSize() -> ScreenSize {
+        let screen_width = UIScreen.main.bounds.width
+        let screen_height = UIScreen.main.bounds.height
+        switch (screen_width,screen_height) {
+        case (320,480),(480,320):
+            return .iphone_35_inch
+        case (320,568),(568,320):
+            return .iphone_4_inch
+        case (375,667),(667,375):
+            return .iphone_47_inch
+        case (414,736),(736,414):
+            return .iphone_55_inch
+        case (375,812),(812,375):
+            return .iphone_58_inch
+        default:
+            return .iphone_4_inch
         }
     }
 

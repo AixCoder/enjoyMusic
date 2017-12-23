@@ -8,7 +8,30 @@
 
 import UIKit
 
+
 class PlayViewDataRepository: NSObject {
 
+    func creationLists() {
+        
+        let token: String = UserDefaults.standard.object(forKey: "douban_token") as! String
+        
+        let request = CreationListRequest.init(doubanToken: token)
+        request.startWithCompletionBlock(success: { (baseReq) in
+            
+        }) { (baseRequest) in
+            
+        }
+    }
     
+    func getSongList(completionHandler: @escaping ((Any? ,NSError?) ->Void) ) {
+                
+        let songRequest = SongListsRequest()
+        songRequest.startWithCompletionBlock(success: { (baseRequest) in
+            
+            completionHandler(baseRequest.responseObject, Optional.none)
+            
+        }) { (baseRequest: YTKBaseRequest) in
+            completionHandler(nil, baseRequest.error as NSError?)
+        }
+    }
 }

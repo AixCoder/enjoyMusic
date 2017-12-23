@@ -218,7 +218,7 @@
     </object>
     <object type="LMREQUEST" id="z118">
         <attribute name="uuid" type="string">5DAA8F31-666B-4D88-98A7-8C53D59456B0</attribute>
-        <attribute name="url" type="string">https://api.douban.com/v2/fm/songlist/11055611/detail</attribute>
+        <attribute name="url" type="string">https://api.douban.com/v2/fm/songlist/20065634/detail</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
@@ -250,19 +250,20 @@
         <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z121"></relationship>
     </object>
     <object type="LMREQUEST" id="z121">
+        <attribute name="clientcertificate" type="string">[{"data":{"mode":0},"identifier":"com.luckymarmot.CertificateDynamicValue"}]</attribute>
         <attribute name="uuid" type="string">C289BB4F-C485-4D37-8A6B-1591CE750976</attribute>
         <attribute name="url" type="string">https://api.douban.com/v2/fm/programme/creation?alt=json\u2600apikey=02646d3fb69a52ff072d47bf23cef8fd\u2600app_name=radio_iphone\u2600audio_patch_version=4\u2600client=s%3Amobile%7Cy%3AiOS%2010.3.2%7Cf%3A120%7Cd%3Aebf66f7519ad364db30c9eac3a575f357b9fd752%7Ce%3AiPhone7%2C1%7Cm%3Aappstore\u2600douban_udid=c5c76f3312085a64d8a1220fd2080e9ec611835a\u2600limit=20\u2600start=0\u2600udid=ebf66f7519ad364db30c9eac3a575f357b9fd752\u2600user_accept_play_third_party=0\u2600version=120</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
         <attribute name="redirectauthorization" type="bool">0</attribute>
-        <attribute name="method" type="string">GET</attribute>
+        <attribute name="method" type="string">POST</attribute>
         <attribute name="followredirects" type="bool">0</attribute>
         <attribute name="body" type="string">[{"data":{"keyValues":[[["alt"],["json"],true],[["apikey"],["02646d3fb69a52ff072d47bf23cef8fd"],true],[["app_name"],["radio_iphone"],true],[["audio_patch_version"],["4"],true],[["client"],["s:mobile|y:iOS 10.3.2|f:120|d:ebf66f7519ad364db30c9eac3a575f357b9fd752|e:iPhone7,1|m:appstore"],true],[["douban_udid"],["c5c76f3312085a64d8a1220fd2080e9ec611835a"],true],[["limit"],["20"],true],[["start"],["0"],true],[["udid"],["ebf66f7519ad364db30c9eac3a575f357b9fd752"],true],[["user_accept_play_third_party"],["1"],true],[["version"],["120"],true]]},"identifier":"com.luckymarmot.BodyFormKeyValueDynamicValue"}]</attribute>
         <attribute name="order" type="int64">2</attribute>
         <attribute name="name" type="string">节目单列表</attribute>
         <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
         <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
-        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z109 z120 z112"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z120 z112 z109"></relationship>
     </object>
 </database>
